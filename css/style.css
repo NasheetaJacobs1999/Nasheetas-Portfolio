@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* Portfolio Body */
+body {
+  padding-top: 50px;
+}
+.gradient-custom {
+    /* fallback for old browsers /
+    background: #6a11cb;
+    
+    / Chrome 10-25, Safari 5.1-6 /
+    background: -webkit-linear-gradient(to right, rgba(186, 205, 146, 1), rgba(117, 164, 127, 1));
+    
+    / W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(186, 205, 146, 1), rgba(117, 164, 127, 1));
+  }
+  
+  /* Nav bar */
+  .navbar-brand {
+    width: 70px;
+    height: 70px;
+  }
+  .nav-item {
+    transition: all .5s;
+    &:hover {
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+  }
