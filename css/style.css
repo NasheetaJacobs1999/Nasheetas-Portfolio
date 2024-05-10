@@ -38,3 +38,65 @@ body {
       text-decoration: underline;
     }
   }
+
+  /* Main section detailing */
+  main{
+    background-image: black;
+  }
+  section {
+    scroll-margin-top: 4rem;
+  }
+  section:nth-child(even){
+    background-image: linear-gradient(to right, #3B683A, #D4E7C5);
+  }
+  section:nth-child(odd){
+    background-image: linear-gradient(to left, #3B683A, #D4E7C5);
+  }
+  h3 {
+    padding-top: 2%;
+}
+.sectHeader {
+  color: #3B683A;
+} 
+
+/* Home text section */
+.header-image {
+  width: 17rem;
+  border-radius: 50px;
+  animation: slideLeft 1s ease-in forwards; 
+  opacity: 0;
+  animation-delay: 1s;
+}
+.home-text {
+  animation: slideRight 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+.text-color {
+  background: linear-gradient(to bottom, black , #3B683A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2 {
+  font-size: 3rem;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
