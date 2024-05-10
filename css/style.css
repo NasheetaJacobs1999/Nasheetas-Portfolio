@@ -100,3 +100,232 @@ h2 {
     opacity: 1;
   }
 }
+/* Resume Section */
+.resumePic {
+    width: 15rem;
+    padding-bottom: 2rem;
+  }
+  .accordion{
+    width: 450px;
+  }
+  
+  /* Skills Section */
+  .saInfo {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    background-color: rgba(186, 205, 146, 1);
+    padding: 10px;
+  }
+  .techLevel {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    background-color: rgba(186, 205, 146, 1);
+    padding: 20px;
+    font-size: 21px;
+  }
+  .techImage {
+    width: 5rem;
+    border-radius: 10%;
+  }
+  .resume {
+    height: 120vh;
+    justify-content: center;
+  }
+  
+  /* Testimonial Section */
+  .test {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    background-color: rgba(186, 205, 146, 1);
+    padding: 10px;
+  }
+  .testImage {
+    width: 10rem;
+    border-radius: 100%;
+    padding-bottom: 10%;
+  }
+  .testimonial-content{
+    margin-top: 4rem;
+  }
+  
+  /* Carousel for projects section */
+  #captions {
+    width: 50vw;
+    height: 100%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-inner {
+    width: 60%;
+  }
+  .card {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    border: none;
+    transition: filter 0.5s ease;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    background-color: rgba(186, 205, 146, 1);
+  }
+  .card img {
+    width: 100%;
+    height: 20em;
+    object-fit: contain;
+    border-radius: inherit;
+  }
+  .card:hover img {
+    filter: grayscale(0);
+  }
+  .card .name {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+  .card .role {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+  }
+  .card .work-at {
+    font-size: 1em;
+    text-align: center;
+  }
+  i.fa-arrow-right,
+  i.fa-arrow-left {
+    background: #3B683A;
+    padding: 10px;
+    border-radius: 100%;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: #3B683A;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    transition: opacity, width .6s ease;
+  }
+  .carousel-indicators .active {
+    opacity: 1;
+    width: 20px;
+  }
+  @media screen and (max-width: 900px){
+    #captions {
+      width: 70vw;
+      height: 70vh;
+    }
+    #captions::before {
+      background: linear-gradient(90deg, #3B683A 60%, black 100%);
+    }
+    #captions::after {
+      background: linear-gradient(-90deg, #3B683A 60%, black 100%);
+    }
+    .card img {
+      width: 100%;
+      height: 10em;
+    }
+    .card .name {
+      margin-top: 1em;
+      font-size: 1em;
+      font-weight: 700;
+    }
+    .card .role {
+      font-size: 0.8em;
+    }
+    .card .work-at {
+      font-size: 0.6em;
+    }
+  }
+  
+  /* Contact Section Design */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    background-color: #4b644a;
+    border-radius: 20px;
+  }
+  .form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #D4E7C5;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+  }
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+    padding-inline: 1em;
+  }
+  .message-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #D4E7C5;
+    font-weight: bold;
+    outline: 1px solid #D4E7C5;
+    transition: all ease-in-out 0.3s;
+  }
+  .message-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #D4E7C5;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  .form-card1 {
+    background-image: linear-gradient(163deg, #D4E7C5 0%, #D4E7C5 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+  }
+  .form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  }
+  .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+  }
+  .form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  .contDetails {
+    padding: 20px;
+    color: #3B683A;
+  }
+  .mail{
+    text-decoration: none;
+    color: black;
+  }
